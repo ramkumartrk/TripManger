@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="?android:windowBackground"
+              android:orientation="vertical"
+              android:paddingTop="55dp">
+
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--android:layout_marginTop="70dp"-->
+
+    <ListView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:id="@+id/membersListView">
+
+    </ListView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/addNewMemberFloatingButton"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@drawable/add_new_person"
+
+            />
+
+
+    <!--<Button-->
+
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@color/colorPrimary"-->
+
+            <!--android:textSize="14sp"-->
+            <!--android:paddingTop="20dp"-->
+
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="67dp"-->
+            <!--android:id="@+id/addExpenseButtonInMembersListFrag"-->
+
+            <!--tools:text="EXPENSE"/>-->
+
+
+    </FrameLayout>
+</LinearLayout>

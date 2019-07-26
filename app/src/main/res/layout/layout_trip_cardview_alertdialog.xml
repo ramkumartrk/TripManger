@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+    <TextView
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/labelTripName"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:text="TRIP NAME"/>
+
+
+    <EditText
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/labelTripName"
+            android:hint="Trip Name"
+            android:id="@+id/tripNameEditTextCardViewAlertDialog"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    <TextView
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:id="@+id/labelTripLocation"
+            android:layout_below="@id/tripNameEditTextCardViewAlertDialog"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:text="TRIP LOCATION"/>
+
+    <EditText
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/labelTripLocation"
+            android:hint="Trip Location"
+            android:id="@+id/tripLocationEditTextCardViewAlertDialog"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    <TextView
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRIP DATE"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tripLocationEditTextCardViewAlertDialog"
+            android:layout_margin="5dp"
+            android:textSize="12dp"
+            android:id="@+id/labelTripDate"/>
+
+    <TextView
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:layout_width="300dp"
+            android:layout_height="29dp"
+            android:hint="Date of Trip Commence"
+            android:layout_margin="5dp"
+            android:layout_below="@id/labelTripDate"
+            android:id="@+id/tripDateTextViewCardViewAlertDialog"/>
+
+    <ImageButton
+            android:tint="@color/colorPrimaryDark"
+            android:padding="20dp"
+            android:id="@+id/tripDatePickerImageButtonCardViewAlertDialog"
+            android:layout_below="@+id/labelTripDate"
+            android:layout_toRightOf="@id/tripDateTextViewCardViewAlertDialog"
+            android:layout_width="60dp"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/calendar"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+
+            android:textSize="14sp"
+            android:layout_marginLeft="-78dp"
+            android:layout_marginTop="11dp"/>
+
+
+    <TextView
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="BUDGET"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_below="@id/tripDateTextViewCardViewAlertDialog"
+            android:id="@+id/labelBudget"/>
+
+    <EditText
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="Budget"
+            android:layout_margin="5dp"
+            android:layout_below="@id/labelBudget"
+            android:inputType="number"
+
+            android:id="@+id/tripBudgetEditTextCardViewAlertDialog"/>
+
+</RelativeLayout>

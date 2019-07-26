@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="8dp">
+
+
+
+        <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/cardViewPayerTextView"
+                android:maxLines="1"
+                android:hint="Payer Name"
+                />
+
+        <ImageButton
+                android:padding="5dp"
+                android:tint="@color/colorPrimaryDark"
+                android:id="@+id/cardViewExpenseEditImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+
+                android:textSize="14sp"
+                android:src="@drawable/edit_pen"
+                android:layout_marginLeft="122dp"
+                android:layout_toRightOf="@+id/cardViewPayerTextView"/>
+
+
+
+
+
+
+        <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:id="@+id/cardViewExpenseNameTextView"
+
+                android:padding="5dp"
+                android:hint="Expense Name"
+                android:layout_below="@+id/cardViewPayerTextView"
+                />
+
+
+        <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16dp"
+
+                android:maxLines="1"
+                android:id="@+id/cardViewAmountTextView"
+
+
+                android:layout_toRightOf="@+id/cardViewExpenseNameTextView"
+                android:hint="Amount"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"/>
+
+        <TextView
+                android:padding="5dp"
+                android:text="ExpenseID"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/cardViewAmountTextView"
+                android:maxLines="1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/cardViewExpenseIDTextView"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="18dp"/>
+
+        <TextView
+                android:padding="5dp"
+                android:text="01/01/2019"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/cardViewExpenseIDTextView"
+               android:layout_below="@+id/cardViewExpenseEditImageButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardViewExpenseDateTextView"
+                android:maxLines="1"
+                />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

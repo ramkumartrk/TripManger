@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_margin="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+                android:maxLines="1"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/payerAlertDialogLabel"
+                android:textColor="@android:color/black"
+                android:text="CHOOSE PAYER:"
+                />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:id="@+id/expenseAlertDialogSpinner">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+
+    </LinearLayout>
+
+    <TextView
+            android:maxLines="1"
+
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:id="@+id/expenseNameAlertDialoglabel"
+            android:text="EXPENSE NAME"
+            android:textColor="@android:color/black"/>
+
+    <EditText
+            android:maxLines="1"
+             android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Eg: Food,Travel"
+            android:id="@+id/expenseNameAlertDialogEditText"/>
+
+    <TextView
+            android:maxLines="1"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+            android:id="@+id/expenseAmountAlertDialogLabel"
+            android:text="EXPENSE AMOUNT"
+            android:textColor="@android:color/black"/>
+
+    <EditText
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:id="@+id/expenseAmountAlertDialogEditText"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="EXPENSE DATE - 20/07/2019"
+                android:id="@+id/expenseDateAlertDialogTextView"/>
+
+        <ImageButton
+                android:tint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"
+
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/expenseDateAlertDialogImageButton"
+                android:src="@drawable/calendar"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

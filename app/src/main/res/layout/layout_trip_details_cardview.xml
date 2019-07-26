@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+
+<RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="20dp">
+
+    <TextView
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:id="@+id/labelTripName"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:text="TRIP NAME"/>
+
+    <ImageButton
+            android:adjustViewBounds="true"
+
+            android:tint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/edit_pen"
+
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/labelTripName"
+            android:layout_marginLeft="200dp"
+
+            android:id="@+id/editTripCardViewImageButton"/>
+
+    <TextView
+            android:maxLines="1"
+            android:layout_width="300dp"
+            android:layout_height="29dp"
+            android:layout_margin="5dp"
+
+            android:layout_below="@id/labelTripName"
+            android:hint="Trip Name"
+            android:id="@+id/tripNameTextView"
+
+            android:textSize="16dp"
+            />
+
+
+    <TextView
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:id="@+id/labelTripLocation"
+            android:layout_below="@id/tripNameTextView"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:text="TRIP LOCATION"/>
+
+    <TextView
+            android:maxLines="1"
+            android:layout_width="300dp"
+            android:layout_height="29dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/labelTripLocation"
+            android:hint="Trip Location"
+            android:id="@+id/tripLocationTextView"
+
+            android:textSize="16dp"/>
+
+
+    <TextView
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRIP DATE"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tripLocationTextView"
+            android:layout_margin="5dp"
+            android:textSize="12dp"
+            android:id="@+id/labelTripDate"/>
+
+    <TextView
+            android:maxLines="1"
+            android:layout_width="300dp"
+            android:layout_height="29dp"
+            android:hint="Date of Trip Commence"
+            android:layout_margin="5dp"
+            android:layout_below="@id/labelTripDate"
+            android:id="@+id/tripDateTextView"
+            android:textSize="16dp"/>
+
+
+  <TextView
+          android:maxLines="1"
+          android:layout_width="wrap_content"
+          android:layout_height="29dp"
+          android:text="BUDGET"
+          android:textColor="@android:color/black"
+          android:layout_margin="5dp"
+          android:layout_below="@id/tripDateTextView"
+          android:textSize="12dp"
+          android:id="@+id/labelBudget"/>
+
+    <TextView
+            android:maxLines="1"
+            android:layout_width="300dp"
+            android:layout_height="29dp"
+            android:hint="Budget"
+            android:layout_margin="5dp"
+            android:layout_below="@id/labelBudget"
+            android:id="@+id/budgetTextView"
+
+            android:textSize="16dp"/>
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

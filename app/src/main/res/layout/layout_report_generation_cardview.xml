@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:padding="20dp"
+
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:text="Who Owes/Gets to whom, all info here"
+                android:id="@+id/reportTextView"
+                />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
